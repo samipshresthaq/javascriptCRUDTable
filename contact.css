@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Calibri, sans-serif;
+  box-sizing: border-box;
+}
+.main-container{
+  padding: 0 15px;
+}
+.form-container {
+  width: 500px;
+  margin: 50px auto;
+  box-shadow: 0 0px 10px 0 #cecece;
+}
+.table-container {
+  width: 800px;
+  margin: 50px auto;
+}
+.form {
+  padding: 20px 50px;
+}
+h1 {
+  background: #006064;
+  padding: 10px 20px;
+  color: #fff;
+}
+input[type='text'], input[type='number'] {
+  display: block;
+  width: 50%;
+  padding: 5px 10px 5px 5px;
+  border: none;
+  border-bottom: 1px solid #cecece;
+  border-radius: 2px;
+  margin-bottom: 20px;
+  outline: none;
+  font-size: 18px;
+}
+input[type='text']:focus, input[type='number']:focus {
+  border-bottom: 1px solid #26a69a;
+  box-shadow: 0 1px 0 0 #26a69a;
+}
+input[type='button'] {
+  color: #fff;
+  background-color: #26a69a;
+  text-align: center;
+  letter-spacing: .5px;
+  border: none;
+  border-radius: 2px;
+  padding: 0.3rem 1.3rem;
+  text-transform: uppercase;
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  vertical-align: middle;
+  z-index: 1;
+  transition: .3s ease-out;
+  font-size: 18px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+}
+input[type='button']:hover {
+  background-color: #2bbbad;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
+}
+input[type='button']:focus {
+  outline: none;
+}
+input[type='button'].btnDelete {
+  background: #d32f2f;
+}
+input[type='button'].btnDelete:hover {
+  background-color: #e53935;
+}
+
+/*Table Stling*/
+table {
+  width: 100%;
+  display: table;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+table, th, td {
+  border: none;
+}
+thead {
+  border-bottom: 1px solid #d0d0d0;
+}
+table>tbody>tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+td, th {
+  padding: 15px 5px;
+  display: table-cell;
+  text-align: left;
+  vertical-align: middle;
+  border-radius: 2px;
+}
+th{
+  text-transform: uppercase;
+}
+table input[type='button'] {
+  padding: 10px;
+  font-size: 15px;
+  line-height: 1;
+  height: auto;
+}
+@media only screen and (max-width:992px) {
+  .form{
+    padding: 15px;
+  }
+  input[type='text'], input[type='number'] {
+    width: 100%;
+  }
+  .table-container, .form-container {
+    width: 100%;
+    max-width: 100%;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    display: block;
+    position: relative;
+  }
+  table thead {
+    border: 0;
+    border-right: 1px solid #d0d0d0;
+    display: block;
+    float: left;
+  }
+  table thead tr {
+    display: block;
+    padding: 0 10px 0 0;
+  }
+  table th, table td {
+    display: block;
+    text-align: right;
+    margin: 0;
+    vertical-align: top;
+  }
+  table tbody {
+    display: block;
+    width: auto;
+    position: relative;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  table tbody tr {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 10px;
+  }
+  table td {
+    display: block;
+    min-height: 1.25em;
+    text-align: left;
+  }
+}

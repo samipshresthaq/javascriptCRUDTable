@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <title>Contact Table</title>
+    <link rel="stylesheet" href="contact.css">
+  </head>
+  <body>
+  <div class="main-container">
+    <div class="form-container">
+      <h1>Contact Form</h1>
+      <div class="form">
+        <input type="text" id="name" placeholder="Name" required />
+        <input type="number" id="phone" placeholder="Phone" required />
+        <input type="button" value="Save" id="btnSave" />
+        <input type="button" value="Refresh Form" id="btnRefresh" />
+      </div>
+    </div>
+    <div class="table-container">
+      <table id="table1">
+        <thead id="table-head">
+          <tr>
+            <th>S.N.</th>
+            <th>Name</th>
+            <th>Phone</th>
+            <th>Edit</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+      </table>
+    </div>
+    </div>
+    <script src="contactTable.js" charset="utf-8"></script>
+    <script src="smoothscroll.js" charset="utf-8"></script>
+  </body>
+</html>
